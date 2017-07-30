@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SSDN</title>
+    <meta property="og:title" content="SSDN" />
+    <meta property="og:type" content="SHRI SATGURU DEVAI NAMAH" />
+    <meta property="og:url" content="http://www.humble.net.in" />
+    <meta property="og:image" content="img/image1.png" />
+    <link href="css/main.css?1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="lib/jquery-3.0.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header-content">
+      <button id="home"class="menu" onclick="home()">HOME</button>
+      <button class="menu" onclick="contactus()">FEEDBACK</button>
+    </header>
+    <div>
+      <form>
+        <label>Name :</label>
+        <input type="text" /><br>
+        <label>Place :</label>
+        <input type="text"/><br>
+        <label>Message :</label>
+        <textarea name="message"></textarea>
+      </form>
+    </div>
+    <div class="contact-first slider" id="feedback">
+      <h2 style="text-align: center;">GET IN TOUCH</h2>
+      <div class="flex">
+       <div class="contact-detail">
+         <h3>PHONE NO.</h3>
+         <span>+919999594626</span>
+         <h3>Email</h3>
+         <span>pandey.abhishek2770@gmail.com</span>
+      </div>
+      <div class="contact-img">
+        <img src="img/contact_title.png " class="phone-img"/>
+      </div>
+      <div class="form-div">
+        <form>
+          <input type="text" class="form" placeholder="Full Name"/><br>
+          <input type="text" class="form" placeholder="Emali"/><br>
+          <input type="text" class="form" placeholder="Sujbect"/><br>
+          <textarea name="message" class="form" style="width:150%;" placeholder="Message"></textarea>
+      </form>
+    </div>
+    </div>
+    </div>
+  </body>
+  <script>
+    function contactus (){
+      document.getElementById('feedback').style.display="block";
+      document.getElementById('feedback').style.backgroundColor="#242528";
+    }
+    function home(){
+      document.getElementById('feedback').style.display="none";
+    }
+    </script>
+</html>
