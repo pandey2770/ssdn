@@ -16,7 +16,7 @@
       <button id="home"class="menu" onclick="home()">HOME</button>
       <button class="menu" onclick="contactus()">FEEDBACK</button>
     </header>
-    <div>
+    <div id="home-content">
       <form>
         <label>Name :</label>
         <input type="text" /><br>
@@ -53,9 +53,11 @@
     function contactus (){
       document.getElementById('feedback').style.display="block";
       document.getElementById('feedback').style.backgroundColor="#242528";
+      document.getElementById('home-content').style.display="none";
     }
     function home(){
       document.getElementById('feedback').style.display="none";
+      document.getElementById('home-content').style.display="block";
     }
     </script>
 </html>
