@@ -31,6 +31,16 @@ body {
   margin-left: -55px;
   margin-right: 47px;
 }
+.feedback-button {
+  margin-top: 50px;
+  border: none;
+  font-family: 'Josefin Slab', seri;
+  background: transparent;
+  color: #645e55;
+  font-size: x-large;
+  cursor: pointer;
+  outline-color: #645e55;
+}
 .form {
   border-top: none;
   border-right: none;

@@ -10,6 +10,7 @@
     <link href="css/main.css?1" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <script src="lib/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <header class="header-content">
@@ -40,24 +41,16 @@
       </div>
       <div class="form-div">
         <form>
-          <input type="text" class="form" placeholder="Full Name"/><br>
-          <input type="text" class="form" placeholder="Emali"/><br>
-          <input type="text" class="form" placeholder="Sujbect"/><br>
-          <textarea name="message" class="form" style="width:150%;" placeholder="Message"></textarea>
+          <input type="text" class="form" placeholder="Full Name" id="name"/><br>
+          <input type="text" class="form" placeholder="Emali" id="email"/><br>
+          <input type="text" class="form" placeholder="Sujbect" id="subject"/><br>
+          <textarea name="message" class="form" style="width:150%;" placeholder="Message" id="message"></textarea>
       </form>
+      <button class="feedback-button" onclick="sendbutton()">Send Message</button>
+      <h4 style="display:none;" id="thanku">Thank you for your feedback </h4>
+      <h4 style="display:none;" id="error"> Please enter the correct information</h4>
     </div>
     </div>
     </div>
   </body>
-  <script>
-    function contactus (){
-      document.getElementById('feedback').style.display="block";
-      document.getElementById('feedback').style.backgroundColor="#242528";
-      document.getElementById('home-content').style.display="none";
-    }
-    function home(){
-      document.getElementById('feedback').style.display="none";
-      document.getElementById('home-content').style.display="block";
-    }
-    </script>
 </html>
