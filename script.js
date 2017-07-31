@@ -48,3 +48,17 @@ function contactus (){
       var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     }
+
+    function share(){
+      var input =[  
+                    document.getElementById('name-home').value,
+                    document.getElementById('place-home').value,
+                    document.getElementById('message-home').value];
+
+      var output = [  
+                    'Name : '+input[0] +'\n'+'Place : '+input[1]+'\n'+ 'Message : '+input[2]
+      ];
+
+                    document.getElementById('pagediv').style.display = 'block';
+                    document.getElementById('page').innerHTML = output;
+    }

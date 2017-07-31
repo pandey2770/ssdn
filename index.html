@@ -20,14 +20,17 @@
     <div id="home-content" class="home-content">
       <form>
         <label>Name :</label>
-        <input type="text" class="form-home" /><br>
-        <label>TO :</label>
-        <input type="text" placeholder="Optional" class="form-home" /><br>
+        <input type="text" class="form-home" id="name-home" /><br>
         <label>Place :</label>
-        <input type="text" class="form-home"/><br>
+        <input type="text" class="form-home" id="place-home"/><br>
         <label>Message :</label>
-        <textarea name="message" class="form-home message"></textarea>
+        <textarea name="message" class="form-home message" id="message-home"></textarea>
       </form>
+      <button onclick="share()">Share</button>
+    </div>
+    <div class="page-div" id="pagediv">
+      <p class="page" id="page">
+      </p>
     </div>
     <div class="contact-first slider" id="feedback">
       <h2 style="text-align: center;">GET IN TOUCH</h2>
