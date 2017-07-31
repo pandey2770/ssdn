@@ -41,6 +41,11 @@ body {
   cursor: pointer;
   outline-color: #645e55;
 }
+.home-content {
+  text-align: right;
+  padding-top: 450px;
+  position: fixed;
+}
 .form {
   border-top: none;
   border-right: none;
@@ -55,6 +60,24 @@ body {
   font-size: medium;
   resize: none;
   font-family: 'Josefin Slab', serif;
+}
+.form-home {
+  border-top: none;
+  border-right: none;
+  background-color: transparent;
+  border-left: none;
+  border-bottom-style: dotted;
+  border-color: #242528;
+  color: white;
+  outline: none;
+  text-align: center;
+  font-size: medium;
+  resize: none;
+  font-family: 'Josefin Slab', serif;
+  margin-top: 25px;
+}
+.message {
+  
 }
 .contact-detail {
   text-align: center;

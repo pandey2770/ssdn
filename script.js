@@ -1,11 +1,12 @@
 function contactus (){
       document.getElementById('feedback').style.display="block";
-      document.getElementById('feedback').style.backgroundColor="#242528";
+      document.getElementById('body').style.backgroundColor="#242528";
       document.getElementById('home-content').style.display="none";
     }
     function home(){
       document.getElementById('feedback').style.display="none";
       document.getElementById('home-content').style.display="block";
+      document.getElementById('body').style.backgroundColor="#645e55";
     }
     function sendbutton() {
       document.getElementById('error').style.display = 'none';

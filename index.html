@@ -12,19 +12,21 @@
     <script src="lib/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
-  <body>
+  <body id="body">
     <header class="header-content">
       <button id="home"class="menu" onclick="home()">HOME</button>
       <button class="menu" onclick="contactus()">FEEDBACK</button>
     </header>
-    <div id="home-content">
+    <div id="home-content" class="home-content">
       <form>
         <label>Name :</label>
-        <input type="text" /><br>
+        <input type="text" class="form-home" /><br>
+        <label>TO :</label>
+        <input type="text" placeholder="Optional" class="form-home" /><br>
         <label>Place :</label>
-        <input type="text"/><br>
+        <input type="text" class="form-home"/><br>
         <label>Message :</label>
-        <textarea name="message"></textarea>
+        <textarea name="message" class="form-home message"></textarea>
       </form>
     </div>
     <div class="contact-first slider" id="feedback">
