@@ -44,21 +44,26 @@ function contactus (){
       }
     }
 
-    function validateEmail(email) {
+   function validateEmail(email) {
       var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     }
 
-    function share(){
-      var input =[  
-                    document.getElementById('name-home').value,
-                    document.getElementById('place-home').value,
-                    document.getElementById('message-home').value];
+    var see = 
 
-      var output = [  
-                    'Name : '+input[0] +'\n'+'Place : '+input[1]+'\n'+ 'Message : '+input[2]
-      ];
-
-                    document.getElementById('pagediv').style.display = 'block';
-                    document.getElementById('page').innerHTML = output;
-    }
+    function Share(){
+      for( var i = onclick;onclick>=3 ; ) {(
+      function ( name,place,message) {
+            this.name = document.getElementById('name-home').value;
+            this.place = document.getElementById('place-home').value;
+            this.message = document.getElementById('message-home').value; 
+            var output =['Name : '+this.name +'\n'+ 'Place : '+ this.place+ '\n'+ 'Message : ' + this.message];
+           
+         var result =
+            document.getElementById('pagediv').style.display = 'block';
+            document.getElementById('page').innerHTML=output;
+            output = '  ' ; 
+          }
+            )
+               }
+                   } 

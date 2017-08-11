@@ -13,6 +13,19 @@ body {
   margin: 0 0px;
   width: 100%;
 }
+.button {
+  border: none;
+  font-size: larger;
+  outline: none;
+  font-family: 'Josefin Slab', serif;
+  margin-top: 20px;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.write {
+  display: none;
+}
 .menu {
   border: none;
   background: transparent;
@@ -44,6 +57,7 @@ body {
 .home-content {
   text-align: right;
   padding-top: 450px;
+  position: fixed;
 }
 .form {
   border-top: none;
@@ -76,7 +90,7 @@ body {
   margin-top: 25px;
 }
 .message {
-
+  margin-left: 30px;
 }
 .contact-detail {
   text-align: center;
@@ -98,11 +112,15 @@ body {
   padding-top: 30px;
   font-size: larger;
   padding-left: 20px;
-  white-space: pre;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 .page-div {
   height: 250px;
   background-color: antiquewhite;
   width: 300px;
   display: none;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 30px;
 }
