@@ -49,20 +49,20 @@ function contactus (){
       return re.test(email);
     }
 
-    var see = 
+    var see = document.getElementById('pagediv');
 
     function Share(){
-      for( var i = onclick;onclick>=3 ; ) {(
-      function ( name,place,message) {
+      for( var i = onclick;onclick>=3 ; see.style.left = x_pos+'px') {(
+      function ( name,place,message ) {
             this.name = document.getElementById('name-home').value;
             this.place = document.getElementById('place-home').value;
             this.message = document.getElementById('message-home').value; 
             var output =['Name : '+this.name +'\n'+ 'Place : '+ this.place+ '\n'+ 'Message : ' + this.message];
-           
+       
          var result =
             document.getElementById('pagediv').style.display = 'block';
             document.getElementById('page').innerHTML=output;
-            output = '  ' ; 
+            output = '  ' ;
           }
             )
                }
