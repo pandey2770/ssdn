@@ -51,9 +51,7 @@ function contactus (){
 
     var see = document.getElementById('pagediv');
 
-    function Share(){
-      for( var i = onclick;onclick>=3 ; see.style.left = x_pos+'px') {(
-      function ( name,place,message ) {
+    function Share( name,place,message ) {
             this.name = document.getElementById('name-home').value;
             this.place = document.getElementById('place-home').value;
             this.message = document.getElementById('message-home').value; 
@@ -64,6 +62,10 @@ function contactus (){
             document.getElementById('page').innerHTML=output;
             output = '  ' ;
           }
-            )
-               }
-                   } 
+            
+                  $(document).ready(function() {
+    $('#share').click(function() {
+        $('#pagediv').animate({
+        'marginLeft' : "+=300px"
+        });
+    })})
