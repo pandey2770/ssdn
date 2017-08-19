@@ -13,8 +13,16 @@
       document.getElementById('view').style.display="block";
       document.getElementById('ad').style.display="none";
       document.getElementById('add').style.display="none";
+      document.getElementById('add2').style.display="none";
     }
     function add(){
+      document.getElementById('view-show').style.display="none";
+      document.getElementById('ad').style.display="none";
+      document.getElementById('add').style.display="none";
+      document.getElementById('view').style.display="block";
+      document.getElementById('name-home').style.display="none";
+      document.getElementById('place-home').style.display="none";
+      document.getElementById('add2').style.display="block";
     }
     function sendbutton() {
       document.getElementById('error').style.display = 'none';
