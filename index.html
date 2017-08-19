@@ -10,53 +10,54 @@
     <link href="css/main.css?1" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <script src="lib/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
   </head>
-  <body id="body">
-    <header class="header-content">
-      <button id="home"class="menu" onclick="home()">HOME</button>
-      <button class="menu" onclick="contactus()">FEEDBACK</button>
-    </header>
-    <div id="home-content" class="home-content">
-      <form>
-        <label>Name :</label>
-        <input type="text" class="form-home" id="name-home" /><br>
-        <label>Place :</label>
-        <input type="text" class="form-home" id="place-home"/><br>
-        <label class="message">Message :</label>
-        <textarea name="message" class="form-home" id="message-home"></textarea>
-      </form>
-      <button onclick="Share()" id="share" class="button">Share</button>
-      <span id="write" class="write">Please write some message to share</span>
-    </div>
-    <div class="page-div" id="pagediv">
-      <p class="page" id="page">
-      </p>
-    </div>
-    <div class="contact-first slider" id="feedback">
-      <h2 style="text-align: center;">GET IN TOUCH</h2>
-      <div class="flex">
-       <div class="contact-detail">
-         <h3>PHONE NO.</h3>
-         <span>+919999594626</span>
-         <h3>Email</h3>
-         <span>pandey.abhishek2770@gmail.com</span>
+    <body id="body">
+      <header class="header-content">
+        <button id="home"class="menu" onclick="home()">HOME</button>
+        <button class="menu" onclick="contactus()">FEEDBACK</button>
+      </header>
+      <div id="home-content" class="top">
+        <button onclick="view()" id="view-show" class="button button-share">Share your views</button>
+        <p class="ad" id="ad">OR</p>
+        <button id="add" onclick="add" class="button add">Add your self</button>
+        <div class="view" id="view">
+          <div>
+            <input type="text" class="form-home" placeholder="Name" id="name-home" /><br>
+            <input type="text" class="form-home" placeholder="Place" id="place-home"/><br>
+            <textarea name="message" class="form-home" placeholder="Message" id="message-home"></textarea><br>
+            <input type="button" onclick="Share()" id="button" onclick="Sharea()" class="button" value="Share"/>
+        </div>
       </div>
-      <div class="contact-img">
-        <img src="img/contact_title.png " class="phone-img"/>
+        <div class="page-div" id="pagediv">
+          <p class="page" id="page"></p>
+        </div>
+        <div><div style="display:flex ; flex-wrap: wrap" id="testdiv_to"></div></div>
       </div>
-      <div class="form-div">
-        <form>
-          <input type="text" class="form" placeholder="Full Name" id="name"/><br>
-          <input type="text" class="form" placeholder="Emali" id="email"/><br>
-          <input type="text" class="form" placeholder="Sujbect" id="subject"/><br>
-          <textarea name="message" class="form" style="width:150%;" placeholder="Message" id="message"></textarea>
-      </form>
-      <button class="feedback-button" onclick="sendbutton()">Send Message</button>
-      <h4 style="display:none;" id="thanku">Thank you for your feedback </h4>
-      <h4 style="display:none;" id="error"> Please enter the correct information</h4>
-    </div>
-    </div>
-    </div>
-  </body>
+      <div class="contact-first slider" id="feedback">
+        <h2 style="text-align: center;">GET IN TOUCH</h2>
+          <div class="flex">
+            <div class="contact-detail">
+              <h3>PHONE NO.</h3>
+              <span>+919999594626</span>
+              <h3>Email</h3>
+              <span>pandey.abhishek2770@gmail.com</span>
+            </div>
+            <div class="contact-img">
+              <img src="img/contact_title.png " class="phone-img"/>
+            </div>
+            <div class="form-div">
+              <form>
+                <input type="text" class="form" placeholder="Full Name" id="name"/><br>
+                <input type="text" class="form" placeholder="Emali" id="email"/><br>
+                <input type="text" class="form" placeholder="Sujbect" id="subject"/><br>
+                <textarea name="message" class="form" style="width:150%;" placeholder="Message" id="message"></textarea>
+              </form>
+              <button class="feedback-button" onclick="sendbutton()">Send Message</button>
+              <h4 style="display:none;" id="thanku">Thank you for your feedback </h4>
+              <h4 style="display:none;" id="error"> Please enter the correct information</h4>
+            </div>
+          </div>
+      </div>
+    </body>
+  <script type="text/javascript" src="script.js"></script>  
 </html>

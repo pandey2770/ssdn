@@ -13,6 +13,9 @@ body {
   margin: 0 0px;
   width: 100%;
 }
+.top {
+  padding-top: 150px;
+}
 .button {
   border: none;
   font-size: larger;
@@ -22,9 +25,28 @@ body {
   background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
+  position: fixed;
+  margin-left: 27px;
+  text-align: center;
 }
-.write {
+.button-share{
+  margin-top: 300px;
+}
+.ad{
+  margin-top: 350px;
+  position: fixed;
+  margin-left: 80px;
+}
+.add{
+  margin-top: 375px;
+  position: fixed;
+}
+.view{
   display: none;
+  position: fixed;
+  margin-left: 27px;
+  margin-top: 300px;
+  text-align: center;
 }
 .menu {
   border: none;
@@ -56,7 +78,7 @@ body {
 }
 .home-content {
   text-align: right;
-  padding-top: 450px;
+  padding-top: 350px;
   position: fixed;
 }
 .form {
@@ -83,14 +105,11 @@ body {
   border-color: #242528;
   color: white;
   outline: none;
-  text-align: center;
   font-size: medium;
   resize: none;
   font-family: 'Josefin Slab', serif;
   margin-top: 25px;
-}
-.message {
-  margin-left: 30px;
+  margin-left: 75px;
 }
 .contact-detail {
   text-align: center;
@@ -109,18 +128,17 @@ body {
   justify-content: space-around;
 }
 .page {
-  padding-top: 30px;
   font-size: larger;
   padding-left: 20px;
   white-space: pre-line;
   word-wrap: break-word;
-}
-.page-div {
   height: 250px;
-  background-color: antiquewhite;
+  background: antiquewhite;
   width: 300px;
-  display: none;
-  position: absolute;
-  margin-top: 150px;
   margin-left: 30px;
+  overflow: scroll;
+  line-height: 175%;
+}
+.page-div{
+  display: none;
 }
