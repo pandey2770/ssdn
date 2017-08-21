@@ -88,15 +88,6 @@
         divFrom = document.getElementById("pagediv");
     
         [].forEach.call(divFrom.childNodes, function (node) {
-        divTo.appendChild(node.cloneNode(true));
+        divTo.prepend(node.cloneNode(true));
       })
-      $.fn.reverseChildren = function() {
-        return this.each(function(){
-          var $this = $(this);
-          $this.children().each(function(){
-            $this.prepend(this);
-          });
-        });
-      };
-      $('#testdiv_to').reverseChildren();
     }
