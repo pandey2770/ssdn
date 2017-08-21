@@ -82,6 +82,7 @@
         var result =
         document.getElementById('page').innerHTML=output;
         output = '  ' ;
+        
   
         var divTo = document.getElementById("testdiv_to"),
         divFrom = document.getElementById("pagediv");
@@ -89,4 +90,13 @@
         [].forEach.call(divFrom.childNodes, function (node) {
         divTo.appendChild(node.cloneNode(true));
       })
+      $.fn.reverseChildren = function() {
+        return this.each(function(){
+          var $this = $(this);
+          $this.children().each(function(){
+            $this.prepend(this);
+          });
+        });
+      };
+      $('#testdiv_to').reverseChildren();
     }

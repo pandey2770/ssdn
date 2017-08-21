@@ -142,3 +142,7 @@ body {
 .page-div{
   display: none;
 }
+.copy{
+  display:flex ;
+  flex-wrap: wrap
+}
